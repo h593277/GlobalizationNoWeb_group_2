@@ -10,11 +10,11 @@ public class DescriptionDAO {
 		
 		//create descriptions
 		
-		Description desc1 = new Description(1, "Kopp fra Ikea");
+		Description desc1 = new Description(1, "Cup from Ikea");
 		
-		Description desc2 = new Description(2, "Bord fra Italienske bord mafia");
+		Description desc2 = new Description(2, "Table from italian table mafia");
 		
-		Description desc3 = new Description(3, "Høytaler fra Sonos");
+		Description desc3 = new Description(3, "Speaker from Sonos");
 		
 		
 		//todo add to list
