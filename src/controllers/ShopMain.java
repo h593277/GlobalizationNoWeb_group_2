@@ -44,20 +44,24 @@ public class ShopMain {
 			case "add 3":
 				butikken.addToCart(products.get(2));
 				break;
+			case "remove 1":
+				butikken.removeFromCart(butikken.getCart().getProducts().get(0));
+				break;
+			case "remove 2":
+				butikken.removeFromCart(butikken.getCart().getProducts().get(1));
+				break;
+			case "remove 3":
+				butikken.removeFromCart(butikken.getCart().getProducts().get(2));
+				break;
 			case "cart":
 				butikken.cartView();
 				break;
 			case "shop":
-				butikken.initializeView(products);
+				butikken.shopView(products);
 				break;
 			
 			}
 		}
-	
-		
-		
-		//create inputscanner
-		//switch for different butikk methods based on input
 
 	}
 

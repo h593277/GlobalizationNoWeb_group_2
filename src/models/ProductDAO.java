@@ -9,9 +9,9 @@ public class ProductDAO {
 	{
 		
 		//create products
-		Product prod1 = new Product(1, "Ikea hvit", 0, null, descriptions.get(0));
-		Product prod2 = new Product(2, "Rød eik", 0, null, descriptions.get(1));
-		Product prod3 = new Product(3, "Rød eik", 0, null, descriptions.get(2));
+		Product prod1 = new Product(1, "Ikea hvit", 15.99, null, descriptions.get(0));
+		Product prod2 = new Product(2, "Rød eik", 199.99, null, descriptions.get(1));
+		Product prod3 = new Product(3, "Sonos", 99.99, null, descriptions.get(2));
 		
 		
 		//todo add to list

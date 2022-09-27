@@ -15,6 +15,11 @@ public class Cart {
 	{
 		products.add(product);
 	}
+	
+	public void removeProduct(Product product)
+	{
+		products.remove(product);
+	}
 
 	public List<Product> getProducts() {
 		return products;
