@@ -23,6 +23,11 @@ public class Description {
 	public void setText(String text) {
 		this.text = text;
 	}
+
+	@Override
+	public String toString() {
+		return "Description [langCode=" + langCode + ", text=" + text + "]";
+	}
 	
 	
 

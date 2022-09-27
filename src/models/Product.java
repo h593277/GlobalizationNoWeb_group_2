@@ -56,6 +56,12 @@ public class Product {
 	public void setpDescription(Description pDescription) {
 		this.pDescription = pDescription;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [pno=" + pno + ", pName=" + pName + ", priceInEuro=" + priceInEuro + ", imageFile=" + imageFile
+				+ ", pDescription=" + pDescription + "]";
+	}
 	
 	
 	

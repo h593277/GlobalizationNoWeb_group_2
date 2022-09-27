@@ -5,14 +5,20 @@ import java.util.List;
 
 public class ProductDAO {
 	
-	public List<Product> getAllProducts()
+	public List<Product> getAllProducts(List<Description> descriptions)
 	{
 		
 		//create products
+		Product prod1 = new Product(1, "Ikea hvit", 0, null, descriptions.get(0));
+		Product prod2 = new Product(2, "Rød eik", 0, null, descriptions.get(1));
+		Product prod3 = new Product(3, "Rød eik", 0, null, descriptions.get(2));
 		
 		
 		//todo add to list
 		List<Product> products = new ArrayList<Product>();
+		products.add(prod1);
+		products.add(prod2);
+		products.add(prod3);
 		
 		return products;
 	}
