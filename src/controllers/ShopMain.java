@@ -12,6 +12,10 @@ import models.Product;
 import models.ProductDAO;
 import views.ShopView;
 
+/**
+@author Markus Løtveit
+*/
+
 public class ShopMain {
 
 	public static void main(String[] args) {

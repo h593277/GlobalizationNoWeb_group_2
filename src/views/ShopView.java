@@ -8,11 +8,16 @@ import models.Cart;
 import models.Product;
 import java.text.NumberFormat;
 
+/**
+@author Markus Løtveit
+*/
+
 public class ShopView {
 	
 	private Cart cart; 
 	private Locale locale; 
 	private ResourceBundle appText; 
+	
 	
 	public ShopView(Cart cart) {
 		super();
@@ -21,6 +26,9 @@ public class ShopView {
 		appText = ResourceBundle.getBundle("apptexts", locale);
 	}
 
+	/**
+	Creates the home view
+	*/
 	public void initializeView()
 	{
 		System.out.println("-----------------------------------------------------");
@@ -41,6 +49,9 @@ public class ShopView {
 		
 	}
 	
+	/**
+	Creates the shop view based {@code list<Product>}
+	*/
 	public void shopView(List<Product> products)
 	{
 		System.out.println("-----------------------------------------------------");
@@ -53,6 +64,9 @@ public class ShopView {
 		System.out.println("-----------------------------------------------------");
 	}
 	
+	/**
+	Creates the cart view
+	*/
 	public void cartView()
 	{
 		NumberFormat formatter = NumberFormat.getCurrencyInstance(locale);
@@ -69,6 +83,9 @@ public class ShopView {
 		System.out.println("-----------------------------------------------------");
 	}
 	
+	/**
+	Adds a product to the cart {@code Product product}
+	*/
 	public Product addToCart(Product product)
 	{
 		System.out.println(appText.getString("addProduct") + " " + product.getpName());
@@ -76,6 +93,9 @@ public class ShopView {
 		return product;
 	}
 	
+	/**
+	 Removes a product from the cart {@code Product product} in a very basic manner
+	*/
 	public Product removeFromCart(Product product)
 	{
 		System.out.println(appText.getString("removeProduct") + " " + product.getpName());
