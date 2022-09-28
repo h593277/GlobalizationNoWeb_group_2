@@ -20,12 +20,6 @@ public class ShopView {
 		locale = new Locale("no", "NO");
 		appText = ResourceBundle.getBundle("apptexts", locale);
 	}
-	
-	public void changeLanguage(Locale lang)
-	{
-		locale = lang;
-		appText = ResourceBundle.getBundle("apptexts", locale);
-	}
 
 	public void initializeView()
 	{
@@ -51,8 +45,6 @@ public class ShopView {
 	{
 		System.out.println("-----------------------------------------------------");
 		System.out.println(appText.getString("welcome"));
-		//todo
-		//print out all products
 		for(Product p : products)
 		{
 			System.out.println(p.toString());
@@ -98,6 +90,24 @@ public class ShopView {
 	public void setCart(Cart cart) {
 		this.cart = cart;
 	}
+
+	public Locale getLocale() {
+		return locale;
+	}
+
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+
+	public ResourceBundle getAppText() {
+		return appText;
+	}
+
+	public void setAppText(ResourceBundle appText) {
+		this.appText = appText;
+	}
+	
+	
 	
 	
 

@@ -62,15 +62,15 @@ public class ShopMain {
 				break;
 			case "NO":
 				Locale localeNO = new Locale("no", "NO");
-				butikken.changeLanguage(localeNO);
+				butikken.setLocale(localeNO);
 				break;
 			case "EN":
 				Locale localeEN = new Locale("en", "US");
-				butikken.changeLanguage(localeEN);
+				butikken.setLocale(localeEN);
 				break;
 			case "DE":
 				Locale localeDE = new Locale("de", "DE");
-				butikken.changeLanguage(localeDE);
+				butikken.setLocale(localeDE);
 				break;
 			case "home":
 				butikken.initializeView();
