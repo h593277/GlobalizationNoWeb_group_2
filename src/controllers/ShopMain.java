@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 import models.Cart;
@@ -58,6 +59,18 @@ public class ShopMain {
 				break;
 			case "shop":
 				butikken.shopView(products);
+				break;
+			case "NO":
+				Locale localeNO = new Locale("no", "NO");
+				butikken.changeLanguage(localeNO);
+				break;
+			case "EN":
+				Locale localeEN = new Locale("en", "US");
+				butikken.changeLanguage(localeEN);
+				break;
+			case "DE":
+				Locale localeDE = new Locale("de", "DE");
+				butikken.changeLanguage(localeDE);
 				break;
 			
 			}
