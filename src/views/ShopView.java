@@ -37,6 +37,7 @@ public class ShopView {
 		System.out.println(appText.getString("remove"));
 		System.out.println(appText.getString("cart"));
 		System.out.println(appText.getString("shop"));
+		System.out.println(appText.getString("home"));
 		System.out.println(appText.getString("languageNO"));
 		System.out.println(appText.getString("languageEN"));
 		System.out.println(appText.getString("languageDE"));
