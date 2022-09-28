@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 
 import models.Cart;
 import models.Product;
+import java.text.NumberFormat;
 
 public class ShopView {
 	
@@ -41,6 +42,7 @@ public class ShopView {
 		System.out.println(appText.getString("languageNO"));
 		System.out.println(appText.getString("languageEN"));
 		System.out.println(appText.getString("languageDE"));
+		System.out.println("© MMVIII-MMXXII HVL");
 		System.out.println("-----------------------------------------------------");
 		
 	}
@@ -55,11 +57,13 @@ public class ShopView {
 		{
 			System.out.println(p.toString());
 		}
+		System.out.println("© MMVIII-MMXXII HVL");
 		System.out.println("-----------------------------------------------------");
 	}
 	
 	public void cartView()
 	{
+		NumberFormat formatter = NumberFormat.getCurrencyInstance(locale);
 		double total = 0;
 		System.out.println("-----------------------------------------------------");
 		System.out.println(appText.getString("userCart"));
@@ -68,7 +72,8 @@ public class ShopView {
 			total += p.getPriceInEuro();
 			System.out.println(p.toString());
 		}
-		System.out.println(appText.getString("total") + " " + total);
+		System.out.println(appText.getString("total") + " " + formatter.format(total));
+		System.out.println("© MMVIII-MMXXII HVL");
 		System.out.println("-----------------------------------------------------");
 	}
 	
