@@ -26,17 +26,11 @@ public class ShopView {
 		appText = ResourceBundle.getBundle("apptexts", locale);
 	}
 
-	public void initializeView(List<Product> products)
+	public void initializeView()
 	{
 		System.out.println("-----------------------------------------------------");
 		System.out.println(appText.getString("welcome"));
-		//todo
-		//print out all products
-		for(Product p : products)
-		{
-			System.out.println(p.toString());
-		}
-		
+	
 		System.out.println(appText.getString("navigationCommand"));
 		System.out.println(appText.getString("exit"));
 		System.out.println(appText.getString("add"));

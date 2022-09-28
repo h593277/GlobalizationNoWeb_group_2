@@ -25,7 +25,7 @@ public class ShopMain {
 		
 		ShopView butikken = new ShopView(new Cart(new ArrayList<Product>()));
 		
-		butikken.initializeView(products);
+		butikken.initializeView();
 		
 		while(running)
 		{
@@ -71,6 +71,9 @@ public class ShopMain {
 			case "DE":
 				Locale localeDE = new Locale("de", "DE");
 				butikken.changeLanguage(localeDE);
+				break;
+			case "home":
+				butikken.initializeView();
 				break;
 			
 			}
