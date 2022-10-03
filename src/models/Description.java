@@ -1,5 +1,9 @@
 package models;
 
+/**
+@author Markus Løtveit
+*/
+
 public class Description {
 	
 	private int langCode;

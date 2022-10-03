@@ -2,6 +2,10 @@ package models;
 
 import java.util.List;
 
+/**
+@author Markus Løtveit
+*/
+
 public class Cart {
 	
 	private List<Product> products;
