@@ -117,6 +117,7 @@ public class ShopView {
 
 	public void setLocale(Locale locale) {
 		this.locale = locale;
+		this.appText = ResourceBundle.getBundle("apptexts", locale);
 	}
 
 	public ResourceBundle getAppText() {
